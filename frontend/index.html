@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DestinyYNF | Smart Logistics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <div class="logo-icon">🚀</div>
+    <div class="logo-text">
+      Destiny<span>YNF</span>
+    </div>
+  </div>
+
+  <div class="nav-buttons">
+    <button onclick="location.href='login.html'" class="nav-btn">Login</button>
+    <button onclick="location.href='signup.html'" class="nav-btn primary-nav">Sign Up</button>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Move Smarter. Ship Faster.</h1>
+  <p class="motto">Redefining logistics through innovation & precision.</p>
+
+  <div class="hero-buttons">
+    <button onclick="location.href='signup.html'" class="btn primary">
+      Sign Up
+    </button>
+
+    <button onclick="location.href='login.html'" class="btn outline">
+      Sign In
+    </button>
+  </div>
+</section>
+
+<section class="why">
+  <h2>Why Choose DestinyYNF?</h2>
+
+  <div class="why-grid">
+
+    <div class="why-card">
+      <span class="material-icons">bolt</span>
+      <h3>Lightning Fast Delivery</h3>
+      <p>Optimized routing ensures your shipments arrive on time.</p>
+    </div>
+
+    <div class="why-card">
+      <span class="material-icons">verified</span>
+      <h3>Secure & Reliable</h3>
+      <p>Enterprise-level security for every shipment.</p>
+    </div>
+
+    <div class="why-card">
+      <span class="material-icons">insights</span>
+      <h3>Real-Time Insights</h3>
+      <p>Track orders with live updates and smart analytics.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Floating Promo Bubble -->
+<div id="promoBubble" class="promo-bubble">
+  <div class="promo-header">
+    <span>📢 Announcement</span>
+    <button onclick="closeBubble()">✖</button>
+  </div>
+  <div class="promo-body">
+    👋 Developed by <strong>Destiny Martin Isong/strong><br>
+    Level: 400<br>
+    Matric No: 22030100027
+  </div>
+</div>
+
+<script>
+  const bubble = document.getElementById("promoBubble");
+
+  setInterval(function () {
+    bubble.style.display = "block";
+  }, 10000);
+
+  function closeBubble() {
+    bubble.style.display = "none";
+  }
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

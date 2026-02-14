@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 60px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.logo-text span {
+  color: #6366f1;
+}
+
+.nav-btn {
+  padding: 10px 18px;
+  background: transparent;
+  border: 1px solid #6366f1;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.primary-nav {
+  background: #6366f1;
+  border: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 54px;
+  margin-bottom: 20px;
+}
+
+.motto {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.primary {
+  background: #6366f1;
+  border: none;
+  color: white;
+}
+
+.outline {
+  background: transparent;
+  border: 2px solid #6366f1;
+  color: #6366f1;
+}
+
+/* WHY SECTION */
+.why {
+  padding: 100px 40px;
+  background: #111827;
+  text-align: center;
+}
+
+.why h2 {
+  margin-bottom: 60px;
+  font-size: 36px;
+}
+
+.why-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.why-card {
+  background: #1f2937;
+  padding: 30px;
+  border-radius: 16px;
+  width: 280px;
+  transition: 0.3s;
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+}
+
+.material-icons {
+  font-size: 40px;
+  color: #6366f1;
+  margin-bottom: 15px;
+}
+
+/* AUTH */
+.auth-body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-container {
+  background: #1f2937;
+  padding: 50px;
+  border-radius: 16px;
+  width: 400px;
+  text-align: center;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.auth-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.auth-form button {
+  padding: 12px;
+  background: #6366f1;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* PROMO BUBBLE */
+.promo-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 280px;
+  background: white;
+  color: black;
+  border-radius: 12px;
+  display: none;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.promo-header {
+  display: flex;
+  justify-content: space-between;
+  background: #6366f1;
+  color: white;
+  padding: 10px;
+  border-radius: 12px 12px 0 0;
+}
+
+.promo-body {
+  padding: 15px;
+}
