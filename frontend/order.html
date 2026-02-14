@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Place Order | DestinyYNF</title>
+  <title>Place Order</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="auth-body">
+<div class="loader-overlay" id="loader">
+  <div class="loader-spinner"></div>
+</div>
 
-<div class="auth-container">
-  <h2>Place Shipment Order</h2>
+<body class="auth-page">
+<div class="progress-bar" id="progressBar"></div>
 
-  <form id="orderForm" class="auth-form">
+  <form id="orderForm" class="auth-form fade-up">
+    <h2>Place Shipment Order</h2>
+
     <input type="text" name="origin" placeholder="Pickup Location" required>
     <input type="text" name="destination" placeholder="Delivery Location" required>
     <input type="number" name="weight" placeholder="Weight (kg)" required>
-    <button type="submit">Submit Order</button>
-  </form>
-</div>
 
-<script src="script.js"></script>
+    <button type="submit">Pay on delivery</button>
+  </form>
+
+  <script src="script.js"></script>
 </body>
-</html>
+</html>.

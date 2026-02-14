@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sign Up | DestinyYNF</title>
+  <title>Sign Up</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="auth-body">
-
-<div class="auth-container">
-  <h2>Create Your DestinyYNF Account</h2>
-
-  <form id="signupForm" class="auth-form">
-    <input type="text" name="name" placeholder="Full Name" required />
-    <input type="email" name="email" placeholder="Email Address" required />
-    <input type="password" name="password" placeholder="Password" required />
-    <button type="submit">Sign Up</button>
-  </form>
-
-  <p>Already have an account?
-    <a href="login.html">Login</a>
-  </p>
+<div class="loader-overlay" id="loader">
+  <div class="loader-spinner"></div>
 </div>
 
-<script src="script.js"></script>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+
+<section class="hero">
+  <h2>Welcome</h2>
+
+<form id="signupForm" class="auth-form">
+  <h2>Create Your Account</h2>
+
+  <input type="text" name="name" placeholder="Full Name" required />
+  <input type="email" name="email" placeholder="Email" required />
+  <input type="password" name="password" placeholder="Password" required />
+
+  <button type="submit">Get Started</button>
+
+  <p class="switch">
+    Already have an account?
+    <a href="login.html">Login</a>
+  </p>
+</form>
+
+</section>
+<form id="signupForm">
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -2,93 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>DestinyYNF | Smart Logistics</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <title>TAILSCALE Lmt</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+<div class="loader-overlay" id="loader">
+  <div class="loader-spinner"></div>
+</div>
+<script>
+  const bubble = document.getElementById("promoBubble");
+  // Show after 10 seconds
+  setTimeout(function () {
+    document.getElementById("promoBubble").style.display = "block";
+  }, 10000);
+
+  function closeBubble() {
+    document.getElementById("promoBubble").style.display = "none";
+  }
+
+  function goHome() {
+    window.location.href = "/";
+  }
+</script>
 
 <body>
+<div class="progress-bar" id="progressBar"></div>
 
-<header class="navbar">
+<header class="top-header">
   <div class="logo">
-    <div class="logo-icon">🚀</div>
-    <div class="logo-text">
-      Destiny<span>YNF</span>
-    </div>
+    <span class="cube">📦</span>
+    <span class="brand">TAILSCALE <b>LMT</b></span>
   </div>
+  <div id="userInfo"></div>
 
-  <div class="nav-buttons">
-    <button onclick="location.href='login.html'" class="nav-btn">Login</button>
-    <button onclick="location.href='signup.html'" class="nav-btn primary-nav">Sign Up</button>
-  </div>
+
+
 </header>
 
-<section class="hero">
-  <h1>Move Smarter. Ship Faster.</h1>
-  <p class="motto">Redefining logistics through innovation & precision.</p>
+<section class="hero fade-in">
+  <h1>Welcome to Tailscale</h1>
+  <p>Unleash the power of</p>
 
-  <div class="hero-buttons">
-    <button onclick="location.href='signup.html'" class="btn primary">
-      Sign Up
+<p class="tagline">Seamless</p>
+
+<p class="tagline">Efficiency</p>
+
+
+
+
+  <div class="buttons">
+
+
+ 
+    <button onclick="location.href='signup.html'" class="btn outline">
+        <span class="material-icons">rocket_launch</span>
+      Get Started
     </button>
 
-    <button onclick="location.href='login.html'" class="btn outline">
-      Sign In
-    </button>
+      <button onclick="location.href='login.html'" class="btn primary">
+        Sign in</button>
   </div>
+  <div class="cta-section">
+  <button id="orderBtn" class="primary-btn" style="display:none;">
+    Place Order
+  </button>
+</div>
+
+
+  <p id="welcomeUser" class="hidden"></p>
 </section>
 
-<section class="why">
-  <h2>Why Choose DestinyYNF?</h2>
-
-  <div class="why-grid">
-
-    <div class="why-card">
-      <span class="material-icons">bolt</span>
-      <h3>Lightning Fast Delivery</h3>
-      <p>Optimized routing ensures your shipments arrive on time.</p>
-    </div>
-
-    <div class="why-card">
-      <span class="material-icons">verified</span>
-      <h3>Secure & Reliable</h3>
-      <p>Enterprise-level security for every shipment.</p>
-    </div>
-
-    <div class="why-card">
-      <span class="material-icons">insights</span>
-      <h3>Real-Time Insights</h3>
-      <p>Track orders with live updates and smart analytics.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- Floating Promo Bubble -->
 <div id="promoBubble" class="promo-bubble">
   <div class="promo-header">
     <span>📢 Announcement</span>
     <button onclick="closeBubble()">✖</button>
   </div>
   <div class="promo-body">
-    👋 Developed by <strong>Destiny Martin Isong/strong><br>
+    👋 Developed by <strong>Cos-ibe Anointed</strong><br>
     Level: 400<br>
-    Matric No: 22030100027
+    Matric No: 23030100006
   </div>
 </div>
 
-<script>
-  const bubble = document.getElementById("promoBubble");
 
-  setInterval(function () {
-    bubble.style.display = "block";
-  }, 10000);
 
-  function closeBubble() {
-    bubble.style.display = "none";
-  }
-</script>
+<section class="why fade-up">
+  <h2>Why Choose Tailscale?</h2>
+
+  <div class="cards">
+    <div class="card">
+      <span class="material-icons">inventory_2</span>
+      <h3>Smart Shipping</h3>
+      <p>Manage all your shipments in one place</p>
+    </div>
+
+    <div class="card">
+      <span class="material-icons">local_shipping</span>
+      <h3>Easy Tracking</h3>
+      <p>Real-time updates on all your packages</p>
+    </div>
+
+    <div class="card">
+      <span class="material-icons">payments</span>
+      <h3>Cost Effective</h3>
+      <p>Get the best rates for your shipments</p>
+    </div>
+  </div>
+</section>
 
 <script src="script.js"></script>
 </body>
